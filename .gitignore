@@ -1,0 +1,36 @@
+
+# Java / Maven
+**/target/
+*.class
+.mvn/wrapper/maven-wrapper.jar
+
+# React / Node
+**/node_modules/
+**/dist/
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Credentials and secrets
+**/application.properties
+**/application-*.properties
+*.pem
+*.key
+*credentials*
+*secrets*
+
+# Local files
+.vscode/
+.idea/
+*.log
+.DS_Store
+
+# Large datasets and generated reports
+*.csv
+*.pbix
