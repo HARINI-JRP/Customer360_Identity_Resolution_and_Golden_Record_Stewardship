@@ -24,7 +24,7 @@ jobs:
           cache: maven
           cache-dependency-path: SpringBoot/pom.xml
 
-      - name: Build backend
+      - name: Build Spring Boot
         working-directory: SpringBoot
         run: mvn -B -DskipTests package
 
@@ -41,12 +41,12 @@ jobs:
         with:
           node-version: '24'
           cache: npm
-          cache-dependency-path: React/customer360-frontend/package-lock.json
+          cache-dependency-path: Frontend/customer360-frontend/package-lock.json
 
       - name: Install dependencies
-        working-directory: React/customer360-frontend
+        working-directory: Frontend/customer360-frontend
         run: npm ci
 
-      - name: Build frontend
-        working-directory: React/customer360-frontend
+      - name: Build React
+        working-directory: Frontend/customer360-frontend
         run: npm run build
